@@ -52,8 +52,10 @@ public class Worker {
 		String key = message.split(":")[0];
 		if (!map.containsKey(key)) {
 			map.put(key, message);
+			//TODO 명성 서버 요청 ~
 		} else if (map.containsKey(key)) {
 			System.err.println("message duplicate error!! " + message);
+			//TODO API를 호출 안함?
 		}
 	}
 }
