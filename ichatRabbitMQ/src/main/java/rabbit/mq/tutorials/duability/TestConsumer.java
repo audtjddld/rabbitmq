@@ -12,7 +12,7 @@ import com.rabbitmq.client.Envelope;
 
 import rabbit.mq.tutorials.duability.duplicate.filter.BufferQueue;
 
-public class Worker {
+public class TestConsumer {
 	
 	private final static String QUEUE_NAME = "task_queue";
 	

@@ -4,7 +4,7 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
-public class DurableSend {
+public class TestSender {
 
 	private final static String QUEUE_NAME = "task_queue";
 
