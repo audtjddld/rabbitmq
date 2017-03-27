@@ -15,7 +15,7 @@ public class MQConfig {
 	public MQConfig() throws Exception {
 		factory = new ConnectionFactory();
 		factory.setHost("localhost");
-
+		
 		connection = factory.newConnection();
 		channel = connection.createChannel();
 		channel.queueDeclare(QUEUE_NAME, true, false, false, null);

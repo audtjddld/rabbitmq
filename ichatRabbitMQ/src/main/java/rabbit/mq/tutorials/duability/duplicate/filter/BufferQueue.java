@@ -25,7 +25,7 @@ public class BufferQueue {
 			for (int i = 0; i < maxSize / 2; i++) {
 				deQueue();
 			}
-			queueToString();
+			//queueToString();
 		}
 
 		if (!isDuplicate(item)) {

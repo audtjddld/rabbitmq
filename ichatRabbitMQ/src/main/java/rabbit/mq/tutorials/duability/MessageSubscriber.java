@@ -22,6 +22,8 @@ public class MessageSubscriber {
 	public MessageSubscriber(int filterSize) throws Exception {
 		filter = new BufferQueue(filterSize);
 		mq = new MQConfig();
+
+		// TODO consumer setting 부분 추가?
 	}
 
 	public void getSubscribeMessage() throws Exception {
@@ -33,7 +35,7 @@ public class MessageSubscriber {
 			public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties,
 					byte[] body) throws IOException {
 				String message = new String(body, "UTF-8");
-				LOG.info(" [x] sent message : {}", message);
+				// LOG.info(" [x] sent message : {}", message);
 				getKeyAndMessageCheck(message); // filter check
 			}
 		};
